@@ -16,6 +16,9 @@ namespace Hotkey_Trainer
 
         HotkeyEntry SelectedHotkey;
 
+        Task RevealAnswerTask;
+
+        System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -31,6 +34,15 @@ namespace Hotkey_Trainer
 
                 txtGuess.Focus();
             }
+
+            timer.Interval = 5000;
+            timer.Tick += Timer_Tick;
+        }
+
+        private void Timer_Tick(object? sender, EventArgs e)
+        {
+            lblAnswer.Visible = true;
+            timer.Stop();
         }
 
         private void SelectRandomHotkey()
@@ -41,7 +53,30 @@ namespace Hotkey_Trainer
 
             lblCategory.Text = SelectedHotkey.Category;
             lblCommand.Text = SelectedHotkey.Command;
+
+            lblAnswer.Visible = false;
             lblAnswer.Text = SelectedHotkey.Hotkey;
+
+            timer.Start();
+        }
+
+        private void SetAnswerGreen()
+        {
+            lblAnswer.ForeColor = Color.Green;
+            Application.DoEvents();
+            Thread.Sleep(1000);
+            lblAnswer.ForeColor = Color.Black;
+        }
+
+        private void HandleCorrectAnswer()
+        {
+            timer.Stop();
+
+            lblAnswer.Visible = true;
+
+            SetAnswerGreen();
+
+            SelectRandomHotkey();
         }
 
         private void txtGuess_KeyDown(object sender, KeyEventArgs e)
@@ -52,18 +87,10 @@ namespace Hotkey_Trainer
 
             if (e.KeyData.ToString().Equals(SelectedHotkey.Hotkey))
             {
-                Thread.Sleep(100);
-                SelectRandomHotkey();
+                HandleCorrectAnswer();
             }
             else
             {
-                //if (txtGuess.Text.Equals(SelectedHotkey.Hotkey))
-                //{
-                //    Thread.Sleep(100);
-                //    SelectRandomHotkey();
-                //}
-                //else
-                //{
                 string[] expected = SelectedHotkey.Hotkey.Replace(" ", "").Split("+");
                 Array.Sort(expected);
 
@@ -137,10 +164,8 @@ namespace Hotkey_Trainer
 
                 if (AreArraysEqual(expected, given))
                 {
-                    Thread.Sleep(100);
-                    SelectRandomHotkey();
+                    HandleCorrectAnswer();
                 }
-                //}
             }
         }
 
