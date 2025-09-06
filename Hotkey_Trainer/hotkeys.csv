@@ -1,0 +1,83 @@
+Category,Command,Hotkey
+All Units,Garrison,T
+All Units,Stop,G
+Buildings/Transports,Set Gather Point,T
+Buildings/Transports,Remove Gather Point,T
+Buildings/Transports,Go Back to Work,F
+Buildings/Transports,Unload/Ungarrison,Q
+Buildings/Transports,Lock/Unlock Gate,Q
+Buildings/Transports,Ungarrison,G
+Economic Build Menu,House,Q
+Economic Build Menu,Mill,W
+Economic Build Menu,Mining Camp,E
+Economic Build Menu,Lumber Camp,R
+Economic Build Menu,Dock,T
+Economic Build Menu,Farm,A
+Economic Build Menu,Blacksmith,S
+Economic Build Menu,Market,D
+Economic Build Menu,Monastery,F
+Economic Build Menu,University,G
+Economic Build Menu,Town Center,Z
+Economic Build Menu,More Buildings,V
+Game Commands,Flare,Alt + F
+Game Commands,Pause Game,F3
+Game Commands,Save Game,F2
+Game Commands,Save Chapter,F4
+Go-To/Cycle Commands,Go to Mill,Control + I
+Go-To/Cycle Commands,Go to Mining Camp,Control + G
+Go-To/Cycle Commands,Go to Lumber Camp,Control + Z
+Go-To/Cycle Commands,Go to Dock,Control + D
+Go-To/Cycle Commands,Go to Blacksmith,Control + S
+Go-To/Cycle Commands,Go to Market,Control + M
+Go-To/Cycle Commands,Go to Monastery,Control + Y
+Go-To/Cycle Commands,Go to University,Control + U
+Go-To/Cycle Commands,Go to Town Center,H
+Go-To/Cycle Commands,Go to Barracks,Control + B
+Go-To/Cycle Commands,Go to Archery Range,Control + A
+Go-To/Cycle Commands,Go to Stable,Control + L
+Go-To/Cycle Commands,Go to Siege Workshop,Control + K
+Go-To/Cycle Commands,Go to Castle,Control + V
+Go-To/Cycle Commands,Go to Next Idle Military Unit,","
+Go-To/Cycle Commands,Go to Next Idle Villager,.
+Go-To/Cycle Commands,Go to Selected Object,Space
+Go-To/Cycle Commands,Go to Last Notification,Home
+Military Build Menu,Barracks,Q
+Military Build Menu,Archery Range,W
+Military Build Menu,Stable,E
+Military Build Menu,Siege Workshop,R
+Military Build Menu,Outpost,A
+Military Build Menu,Palisade Wall,S
+Military Build Menu,Stone Wall,D
+Military Build Menu,Tower,F
+Military Build Menu,Bombard Tower,G
+Military Build Menu,Gate,Z
+Military Build Menu,Palisade Gate,X
+Military Build Menu,Castle,C
+Military Units,Attack Move,R
+Military Units,Patrol,Q
+Military Units,Guard,W
+Military Units,Follow,E
+Military Units,Aggressive,A
+Military Units,Defensive,S
+Military Units,Stand Ground,D
+Military Units,No Attack,F
+Military Units,Line Formation,Z
+Military Units,Box Formation,X
+Military Units,Staggered Formation,C
+Military Units,Flank Formation,V
+Select Commands,Select all Military Buildings,Control + Shift + Space
+Select Commands,Select all Docks,Control + Shift + D
+Select Commands,Select all Barracks,Control + Shift + B
+Select Commands,Select all Archery Ranges,Control + Shift + A
+Select Commands,Select all Stables,Control + Shift + L
+Select Commands,Select all Siege Workshops,Control + Shift + K
+Select Commands,Select all Castles,Control + Shift + V
+Select Commands,Select all Monasteries,Control + Shift + Y
+Select Commands,Select all Town Centers,Control + Shift + H
+Select Commands,Select all Idle Villagers,.
+Select Commands,Select all Idle Land/Naval Military Units,"Control + ,"
+Select Commands,Select all Trade Carts/Cogs,Control + Alt + .
+Villagers,Economic Buildings,Q
+Villagers,Military Buildings,W
+Villagers,Repair,E
+Villagers,Cancel Build,B
